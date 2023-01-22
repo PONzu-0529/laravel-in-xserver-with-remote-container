@@ -1,0 +1,17 @@
+{
+	"name": "ponzu0529-tools",
+	"dockerComposeFile": [
+		"docker-compose.yml"
+	],
+	"service": "httpd",
+	"workspaceFolder": "WORKSPACE_FOLDER",
+	"extensions": [
+		"oderwat.indent-rainbow", // indent-rainbow
+		"donjayamanne.githistory", // Git History
+		"eamodio.gitlens", // GitLens — Git supercharged
+		"GitHub.vscode-pull-request-github", // GitHub Pull Requests and Issues
+		"adpyke.vscode-sql-formatter" // SQL Formatter
+	],
+	"remoteUser": "USER_NAME"
+	// "shutdownAction": "none",
+}

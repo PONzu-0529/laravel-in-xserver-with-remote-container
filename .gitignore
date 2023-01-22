@@ -1,0 +1,7 @@
+# devcontainer
+.devcontainer/devcontainer.json
+.devcontainer/.env
+
+# init SQL
+mariadb/0_init.sql
+mariadb/9_grant.sql
