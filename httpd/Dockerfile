@@ -24,7 +24,7 @@ RUN sed -ri -e "s!/var/www/html!${DOCUMENT_ROOT}!g" /etc/apache2/sites-available
     sed -ri -e "s!/var/www/!${DOCUMENT_ROOT}!g" /etc/apache2/apache2.conf /etc/apache2/conf-available/*.conf && \
     mv "$PHP_INI_DIR/php.ini-development" "$PHP_INI_DIR/php.ini" && \
     sed -ri -e 's/;extension=mysqli/extension=mysqli/g' $PHP_INI_DIR/php.ini && \
-    docker-php-ext-install mysqli zip
+    docker-php-ext-install mysqli pdo_mysql zip
 
 # add user
 RUN useradd --uid ${USER_UID} --create-home --shell /bin/bash -G sudo,root ${USERNAME} && \
