@@ -11,6 +11,4 @@ ln -s /home/${XSERVER_ID}/${XSERVER_DOMAIN}/repos/public /home/${XSERVER_ID}/${X
 
 # Change Owner
 sudo chown -R 1000 /home/${XSERVER_ID}/${XSERVER_DOMAIN}/repos/vendor
-
-# Setup Composer
-composer install
+sudo chown -R 1000 /home/${XSERVER_ID}/${XSERVER_DOMAIN}/repos/node_modules
