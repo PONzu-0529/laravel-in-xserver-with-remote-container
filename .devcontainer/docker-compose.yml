@@ -18,6 +18,7 @@ services:
     volumes:
       - ${LOCAL_HOST_PATH}:/home/${XSERVER_ID}/${XSERVER_DOMAIN}/repos
       - /home/${XSERVER_ID}/${XSERVER_DOMAIN}/public_html
+      - /home/${XSERVER_ID}/${XSERVER_DOMAIN}/repos/vendor
     working_dir: "/home/${XSERVER_ID}/${XSERVER_DOMAIN}/repos"
   mariadb:
     image: mariadb:10.5
