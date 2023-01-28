@@ -10,7 +10,15 @@
 		"donjayamanne.githistory", // Git History
 		"eamodio.gitlens", // GitLens — Git supercharged
 		"GitHub.vscode-pull-request-github", // GitHub Pull Requests and Issues
-		"adpyke.vscode-sql-formatter" // SQL Formatter
+		"bmewburn.vscode-intelephense-client", // PHP Intelephense
+		"neilbrayfield.php-docblocker", // PHP DocBlocker
+		"onecentlin.laravel5-snippets", // Laravel Snippets
+		"amiralizadeh9480.laravel-extra-intellisense", // Laravel Extra Intellisense
+		"ctf0.laravel-goto-controller", // Laravel Goto Controller
+		"octref.vetur", // Vetur
+		"adpyke.vscode-sql-formatter", // SQL Formatter
+		"dbaeumer.vscode-eslint", // ESLint
+		"humao.rest-client" // REST Client
 	],
 	"remoteUser": "USER_NAME"
 	// "shutdownAction": "none",

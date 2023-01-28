@@ -13,6 +13,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/laravel', function () {
     return view('welcome');
 });
+
+Route::get('/', function () {
+    return makeVueResponse();
+});
+
+Route::get('/{any}', function () {
+    return makeVueResponse();
+});
+
+function makeVueResponse()
+{
+    return response()
+        ->file('index.html', ['Content-Type' => 'text/html']);
+}
