@@ -4,6 +4,7 @@
     "module": "esnext",
     "strict": true,
     "jsx": "preserve",
+    "importHelpers": true,
     "moduleResolution": "node",
     "experimentalDecorators": true,
     "skipLibCheck": true,
@@ -26,7 +27,9 @@
       "dom",
       "dom.iterable",
       "scripthost"
-    ]
+    ],
+    // When set to true, TypeScript will raise an error when a class property was declared but not set in the constructor.
+    "strictPropertyInitialization": false,
   },
   "include": [
     "src/**/*.ts",
@@ -37,5 +40,5 @@
   ],
   "exclude": [
     "node_modules"
-  ]
+  ],
 }

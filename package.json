@@ -4,8 +4,10 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
+    "build-dev": "vue-cli-service build --mode development",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint src",
+    "build-test-ts": "webpack --config webpack.config.test.js",
+    "lint": "vue-cli-service lint src *.js",
     "dev": "npm run development",
     "development": "mix",
     "hot": "mix watch --hot",
@@ -15,11 +17,25 @@
     "watch-poll": "mix watch -- --watch-options-poll=1000"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.2.0",
+    "@fortawesome/free-solid-svg-icons": "^6.2.0",
+    "@fortawesome/vue-fontawesome": "^2.0.8",
+    "@types/lodash": "^4.14.172",
+    "axios": "^0.21.4",
+    "buefy": "^0.9.8",
     "core-js": "^3.8.3",
+    "dayjs": "^1.10.5",
     "vue": "^3.2.13",
     "vue-class-component": "^8.0.0-0",
+    "vue-head": "^2.2.0",
+    "vue-js-modal": "^2.0.1",
+    "vue-property-decorator": "^9.1.2",
     "vue-router": "^4.0.3",
-    "vuex": "^4.0.0"
+    "vuex": "^4.0.0",
+    "vuex-module-decorators": "^2.0.0",
+    "webpack": "^4.0.0",
+    "webpack-cli": "^4.10.0",
+    "xmlhttprequest": "^1.8.0"
   },
   "devDependencies": {
     "@popperjs/core": "^2.10.2",
@@ -49,5 +65,11 @@
   },
   "gitHooks": {
     "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,vue,ts,tsx}": [
+      "vue-cli-service lint",
+      "git add"
+    ]
   }
 }
