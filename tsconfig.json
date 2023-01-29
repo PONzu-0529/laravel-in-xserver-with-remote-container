@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "esnext",
     "module": "esnext",
     "strict": true,
     "jsx": "preserve",
@@ -27,7 +27,9 @@
       "dom",
       "dom.iterable",
       "scripthost"
-    ]
+    ],
+    // When set to true, TypeScript will raise an error when a class property was declared but not set in the constructor.
+    "strictPropertyInitialization": false,
   },
   "include": [
     "src/**/*.ts",
@@ -38,5 +40,5 @@
   ],
   "exclude": [
     "node_modules"
-  ]
+  ],
 }

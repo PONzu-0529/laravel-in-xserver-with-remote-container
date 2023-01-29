@@ -1,5 +1,5 @@
 {
-	"name": "ponzu0529-tools",
+	"name": "laravel-in-xserver-with-remote-container",
 	"dockerComposeFile": [
 		"docker-compose.yml"
 	],
