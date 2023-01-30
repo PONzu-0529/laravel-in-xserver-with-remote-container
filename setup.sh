@@ -50,7 +50,7 @@ sed -ri -e "s!XSERVER_SUBDOMAIN=!XSERVER_SUBDOMAIN=${xserver_subdomain}!g" .devc
 
 # Setup .devcontainer.json
 sed -ri -e "s!\"remoteUser\": \"USER_NAME\"!\"remoteUser\": \"${username}\"!g" .devcontainer/devcontainer.json
-sed -ri -e "s!\"workspaceFolder\": \"WORKSPACE_FOLDER\"!\"workspaceFolder\": \"/home/${xserver_id}/${xserver_domain}/repos\"!g" .devcontainer/devcontainer.json
+sed -ri -e "s!\"workspaceFolder\": \"WORKSPACE_FOLDER\"!\"workspaceFolder\": \"/home/${xserver_id}/${xserver_domain}/repos/${xserver_subdomain}\"!g" .devcontainer/devcontainer.json
 
 # Setup init SQL
 sed -ri -e "s!\`DB_TABLE_NAME\`!\`${table_name}\`!g" mariadb/0_init.sql
